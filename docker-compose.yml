@@ -21,7 +21,8 @@ services:
 
   app:
     image: kodcloud/kodbox:v1.22
-    
+    ports:
+      - 80:80
     links:
       - db
       - redis
